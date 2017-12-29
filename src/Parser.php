@@ -1,6 +1,6 @@
 <?php
 
-namespace dmitriygalitsy\parser;
+namespace dmitriygalitsyn\parser;
 
 /**
  *@author Dmitry Galitsyn <Simba16list@mail.ru>
@@ -20,6 +20,8 @@ class Parser Implements ParserInterface
 		if($htmlPage === false){
 			return ['Invalid URL'];
 	}
+        
+        //Regular expression
 	
 	preg_match_all('/<' . $tag . '.*?>(.*?)\/' . $tag . '>/&', $htmlPage, $strings);
 	

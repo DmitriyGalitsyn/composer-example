@@ -1,6 +1,6 @@
 <?php
 
-namespace dmitriygalitsy\parser; 
+namespace dmitriygalitsyn\parser; 
 
 /**
  *@author Dmitry Galitsyn <Simba16list@mail.ru>
