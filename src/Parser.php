@@ -21,7 +21,6 @@ class Parser Implements ParserInterface
 			return ['Invalid URL'];
 	}
         
-        //Regular expression
 	
 	preg_match_all('/<' . $tag . '.*?>(.*?)\/' . $tag . '>/s', $htmlPage, $strings);
 	
@@ -30,8 +29,5 @@ class Parser Implements ParserInterface
 	}
 		return $strings[1];
     }
-    
-    public function test(){
-        //feature
-    }
+
 }
