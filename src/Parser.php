@@ -14,7 +14,7 @@ class Parser Implements ParserInterface
   *@return array
   */
     
-    public function process(string $url, string $tag): array{
+    public function process(string $tag, string $url): array{
 		$htmlPage = file_get_contents($url);
 			
 		if($htmlPage === false){
