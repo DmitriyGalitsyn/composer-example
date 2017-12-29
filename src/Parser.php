@@ -23,7 +23,7 @@ class Parser Implements ParserInterface
         
         //Regular expression
 	
-	preg_match_all('/<' . $tag . '.*?>(.*?)\/' . $tag . '>/&', $htmlPage, $strings);
+	preg_match_all('/<' . $tag . '.*?>(.*?)\/' . $tag . '>/s', $htmlPage, $strings);
 	
 	if (empty($strings[1])){
 		return ['There are no sucs tags on the page'];
